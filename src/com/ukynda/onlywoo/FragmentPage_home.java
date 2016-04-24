@@ -4,14 +4,15 @@ import com.ukynda.onlywoo.R;
 import com.ukynda.onlywoo.data.ItemImageAdatper;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
-
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
 public class FragmentPage_home extends Fragment {
@@ -38,6 +39,19 @@ public class FragmentPage_home extends Fragment {
 	private void initiView() { 
 		gridView = (GridView) mview.findViewById(R.id.gridView1); 
 		gridView.setAdapter(new ItemImageAdatper(mContext));
+		gridView.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+					Intent intent = new Intent(mContext,ItemActivity.class);
+					Bundle bundle = new Bundle();
+					bundle.putString("data", String.valueOf(position));
+					intent.putExtras(bundle);
+					startActivity(intent);
+				
+			}
+		}); 
 	}
 
 	@Override

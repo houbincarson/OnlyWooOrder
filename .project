@@ -25,9 +25,15 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>edu.mit.csail.relo.jdt.builder.ReloJDTBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>edu.mit.csail.relo.jdt.builder.ReloJDTBuilderProjectNature</nature>
 	</natures>
 </projectDescription>

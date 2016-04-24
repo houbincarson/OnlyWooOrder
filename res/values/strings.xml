@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">送交单客户端</string>
+    <string name="app_name">钻石王老五</string>
     <string name="action_settings">Settings</string>
     <string name="label_title">老凤祥送交单管理</string>
     <string name="soft_update_no">已经是最新版本</string>
@@ -66,5 +66,8 @@
     <string name="title_activity_splash">SplashActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_item">ItemActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_gallery_image">GalleryImageActivity</string>
 
 </resources>

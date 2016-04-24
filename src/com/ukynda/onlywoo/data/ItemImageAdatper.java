@@ -1,17 +1,14 @@
 package com.ukynda.onlywoo.data;
 
 import java.util.ArrayList;
-import com.ukynda.onlywoo.R;
-
+import com.ukynda.onlywoo.R; 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -69,7 +66,7 @@ public class ItemImageAdatper  extends BaseAdapter {
           
         // set icon   
         viewTag.mIcon.setBackgroundResource(mDrawableList.get(position));  
-        //viewTag.mIcon.setLayoutParams(params);  
+        viewTag.mIcon.setLayoutParams(params);  
         return convertView;  
     }
     
